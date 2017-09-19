@@ -38,7 +38,8 @@ define(['knockout', 'jquery', 'jqueryui', 'bootstrap', 'model/Constants'],
                  * An observable array of servers
                  */
                 this.servers = layerManager.servers;
-                self.serverAddress = ko.observable("http://neowms.sci.gsfc.nasa.gov/wms/wms");
+                self.serverAddress = ko.observable("http://localhost:8080/geoserver/nasa/wms");
+                //self.serverAddress = ko.observable("http://neowms.sci.gsfc.nasa.gov/wms/wms");
 
                 /**
                  * Toggles the selected layer's visibility on/off
